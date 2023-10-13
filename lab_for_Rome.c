@@ -12,16 +12,15 @@ int main () {
                 
                 val1 = pow(fabs(cos(x)), y);
                 val2 = pow(x + 6, 0.2);
-            
+                u = fminf(val1, val2); 
             }
 
             else {
                 
                 val3 = pow(x, 2) + x * pow(y, 2);
+                u = val3;
             }
             
-
-            u = fminf(val1, val2); 
 
             //printf("v1=%f v2=%f v3=%f\n", val1, val2, val3);
             printf("x=%f y=%f f(x, y)=%f\n", x, y, u);
