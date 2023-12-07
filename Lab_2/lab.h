@@ -8,3 +8,4 @@ void save(track **arr, int *n);
 void write(track *arr, int n);
 void read(track **arr, int *n);
 void search(track *arr, int n);
+void print_db(track *arr, int n);

@@ -69,18 +69,9 @@ int main()
 
 			case 2: 
 			{
-				if(!arr) 
-				{
-					printf("\nCan not find any song\n");
-				}
 				
-				else 
-				{
-				
-				for(int i = 0; i < n; i++)
-					printf("|Song name: %s\n|Album: %s\n|Composer: %s\n\n", arr[i].name, arr[i].album, arr[i].composer);
-					
-				}
+			print_db(arr, n);		
+			
 				
 			continue;
 			

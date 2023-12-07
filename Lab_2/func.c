@@ -162,7 +162,22 @@ void search(track *arr, int n)
 		
 	printf("%c",'\n');
 	}
+	
+}
 
-
+void print_db(track *arr, int n)
+{
+	if(!arr) 
+	{
+		printf("\nCan not find any song\n");
+	}
+	
+	else 
+	{
+	
+	for(int i = 0; i < n; i++)
+		printf("\n|Song name: %s\n|Album: %s\n|Composer: %s\n\n", arr[i].name, arr[i].album, arr[i].composer);
+		
+	}
 
 }
